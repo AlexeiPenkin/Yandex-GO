@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff" as="font">
-    <link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff" as="font">
-    <link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/4/text-black.woff" as="font">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://db.onlinewebfonts.com/c/23a02e8af5ef33a9b496dd524401550f?family=YS+Text+Regular+Regular" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/55b3b22e91fcf995e6a087241e519670?family=YS+Text+Medium+Regular" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/04de913675ba5e7f62685597797da909?family=YS+Text+Bold+Regular" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <title>ЯндексGO</title>
 </head>
 <body>
@@ -14,19 +15,148 @@
     <div class="main">
 
         <section class="intro">
-            <img src="./img/intro-logo.svg" alt="logo" class="logo">
-            <h1 class="">Вступайте в клуб Самокатов</h1>
-            <p>
-                Купите абонемент, чтобы стать частью клуба в новом сезоне–2024. 8 месяцев за 
-                <div class="prices">
-                    <img src="./img/intro-price-discount.svg" alt="price" class="price discount">
-                    <img src="./img/intro-price-old.svg" alt="price" class="price old">
-                </div> 
-            </p>
-            <button>Стать частью клуба</button>
+            <div class="wrapper">
+                <div class="info">
+                    <img src="./img/intro-logo.svg" alt="logo" class="logo">
+                    <h1 class="">Вступайте<br>в клуб<br>Самокатов</h1>
+                    <p class="paragraph">
+                        Купите абонемент, чтобы стать<br>частью клуба в новом сезоне-2024.<br>8 месяцев за 
+                    </p>
+                    <div class="prices">
+                        <span class="price-discount">499₽</span>
+                        <span class="price-old">3190₽</span>
+                        <svg viewBox="0 0 46 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1L46 1" stroke="#808080"/></svg>
+                    </div> 
+                    <button>Стать частью клуба</button>
+                </div>
+                <img src="./img/intro-pic.png" alt="picture" class="picture">
+            </div>
         </section>
+
+        <div class="container">
+
+            <section class="membership">
+                <h2>Вот что даёт участие в клубе</h2>
+                <div class="options">
+                    <div class="option">
+                        <img src="./img/membership-icon-1.png" alt="icon" class="icon">
+                        <p>0₽ за старт в каждой поездке</p>
+                    </div>
+                    <div class="option">
+                        <img src="./img/membership-icon-2.png" alt="icon" class="icon">
+                        <p>Катаетесь с друзьями? Бронируйте до трёх самокатов с аккаунта с абонементом — так у всех будет бесплатный старт</p>
+                    </div>
+                    <div class="option">
+                        <img src="./img/membership-icon-3.png" alt="icon" class="icon">
+                        <p>Бесплатная пауза 15 минут в поездке — например, чтобы зайти за кофе или передохнуть</p>
+                    </div>
+                    <div class="option">
+                        <img src="./img/membership-icon-4.png" alt="icon" class="icon">
+                        <p>Если самокат недостаточно<br>заряжен или с ним неудобно переходить дорогу, замените по пути на другой — это бесплатно</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events">
+                <h2>Эксклюзивный доступ<br>к событиям Самокатов</h2>
+                <p>
+                    С абонементом — у вас доступ<br>к специальным мероприятиям, скидки и классный мерч. В 2023 году мы танцевали на Даче Плюс<br>с Антохой MC, катались на самокатах<br>с Сергеем Мезенцевым и слушали хор Attaque de Panique
+                </p>
+                <div id="slider_bl">
+                    <div class="wrapper">
+                        <input checked="" type="radio" name="slider" id="slide1">
+                        <input type="radio" name="slider" id="slide2">
+                        <input type="radio" name="slider" id="slide3">
+                        <input type="radio" name="slider" id="slide4">
+                        <div class="slider-wrapper">
+                            <div class="inner">
+                                <article>
+                                <img src="./img/slider-pic1.png" alt="picture" class="slide">
+                                </article>
+                                <article>
+                                <img src="./img/slider-pic2.png" alt="picture" class="slide">
+                                </article>
+                                <article>
+                                <img src="./img/slider-pic3.png" alt="picture" class="slide">
+                                </article>
+                                <article>
+                                <img src="./img/slider-pic4.png" alt="picture" class="slide">
+                                </article>
+                            </div>
+                        </div>
+                        <div class="slider-prev-next-control">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
+                        </div>
+                        <div class="slider-dot-control">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photos">
+                <div class="col-1">
+                    <div class="photo photo1">
+                        <img src="./img/photo1.png" alt="photo" class="photo">
+                        <img src="./img/photo1-icon1.png" alt="icon" id="icon1">
+                    </div>
+                    <div class="photo photo2">
+                        <img src="./img/photo2.png" alt="photo" class="photo">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="photo photo3">
+                        <img src="./img/photo3.png" alt="photo" class="photo">
+                        <img src="./img/photo3-icon3.png" alt="icon" id="icon3">
+                    </div>
+                    <div class="photo photo4">
+                        <img src="./img/photo4.png" alt="photo" class="photo">
+                        <img src="./img/photo4-icon4.png" alt="icon" id="icon4">
+                    </div>
+                </div>
+            </section>
+
+            <section class="cashback">
+                <div class="info">
+                    <h2>Купить абонемент<br>и вступить<br>в клуб смогут те, кто в Плюсе</h2>
+                    <p>
+                        За каждую поездку на самокатах такие пользователи получают кешбэк баллами. Баллы можно тратить на поездки на самокатах и такси с Яндекс Go, покупки и заказы в других сервисах Яндекса
+                    </p>
+                </div>
+                <img src="./img/cashback-pic1.png" alt="picture" class="picture1">
+                <img src="./img/cashback-pic2.png" alt="picture" class="picture2">
+            </section>
+
+            <section class="join">
+                <img src="./img/cashback-pic2.png" alt="picture" class="picture">
+                <div class="info">
+                    <h2>80% наших пользователей уже в клубе<br>и экономят<br>на поездках</h2>
+                    <p>
+                        Присоединяйтесь - опция начнёт действовать в начале сезона-2024. Об открытии сезона предупредим заранее, чтобы вы были готовы
+                    </p>
+                    <button class="join-btn">Хочу абонемент</button>
+                    <div class="container-btn">
+                        <button class="sticky-btn">Стать частью клуба</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="add-options">
+                <p>
+                    Доп. опция «Абонемент на самокаты» на 8 месяцев (240 дней) активируется автоматически с момента старта сезона 2024 г. самокатов Яндекс Go, далее предусмотрено автопродление доп.опции за 399 руб./мес. Сертификат на доп.опцию «Абонемент на самокаты» на 8 месяцев оформляется >на условиях документа <span>yandex.ru/legal/scooters_seasonpass.</span> Доп.опция доступна пользователям с активной подпиской (условия подписки: <span>yandex.ru/legal/yandex_plus_conditions</span>), есть ограничения, подробнее: <span>yandex.ru/legal/yandex_plus_opzii_list.</span> В случае отсутствия у пользователя активной подписки на дату активации доп.опции, пользователю предоставляется 7 дней подписки Яндекс Плюс бесплатно, далее автопродление — 299 руб./мес. Электросамокаты Яндекс Go — сервис аренды электросамокатов на условиях: <span>clck.ru/gwDGn.</span> 0+
+                </p>
+            </div>
+
+        </div>
 
     </div>
     
 </body>
+<script src="script.js"></script>
 </html>
